@@ -6,7 +6,6 @@ import miniRequest from './miniRequest'
 
 export function dispatchRequest(config: AxiosRequestConfig): AxiosPromise {
   processConfig(config)
-  debugger
   return miniRequest(config)
     .then(res => {
       return transformResponseData(res)

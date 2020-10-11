@@ -1,6 +1,6 @@
 {
-  "name": "mini-axios-ts",
-  "version": "0.0.1",
+  "name": "@aocoding/mini-axios",
+  "version": "0.0.2",
   "description": "",
   "keywords": [],
   "main": "dist/miniAxios.js",
