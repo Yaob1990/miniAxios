@@ -27,6 +27,8 @@ export default function miniRequest<T>(config: AxiosRequestConfig): AxiosPromise
         }
       },
       fail(error: AxiosResponseError) {
+        // TODO 需要明确返回的内容
+        error.config = config
         reject(error)
       }
     })

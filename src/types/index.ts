@@ -75,6 +75,7 @@ export interface AxiosResponseError {
   data: any
   error: number
   errorMessage: string
+  config: AxiosRequestConfig
   headers: {
     [propName: string]: string
   }
