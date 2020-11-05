@@ -1,6 +1,6 @@
 {
   "name": "@aocoding/mini-axios",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "keywords": [],
   "main": "dist/miniAxios.js",
@@ -12,7 +12,10 @@
   "author": "Yao1990 <admin@jscoder.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:Yaob1990/miniAxios.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yaob1990/miniAxios/issues"
   },
   "license": "MIT",
   "engines": {
