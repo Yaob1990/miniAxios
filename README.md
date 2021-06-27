@@ -9,37 +9,37 @@
     <tr>
         <td align="center" valign="middle">
             <a href="https://developers.weixin.qq.com/miniprogram/dev/api/wx.request.html" target="_blank">
-                <img src="./doc/wechat.png" alt="微信小程序" width="60">
+                <img src="https://raw.githubusercontent.com/Yaob1990/miniAxios/master/doc/wechat.png" alt="微信小程序" width="60">
                 <div>微信小程序</div>
             </a>
         </td>
         <td align="center" valign="middle">
             <a href="https://docs.alipay.com/mini/api/network" target="_blank">
-                <img src="./doc/alipay.png" alt="支付宝小程序" width="60">
+                <img src="https://raw.githubusercontent.com/Yaob1990/miniAxios/master/doc/alipay.png" alt="支付宝小程序" width="60">
                 <div>支付宝小程序</div>
             </a>
         </td>
         <td align="center" valign="middle">
             <a href="https://docs.alipay.com/mini/multi-platform/common" target="_blank">
-                <img src="./doc/dingding.png" alt="钉钉小程序" width="60">
+                <img src="https://raw.githubusercontent.com/Yaob1990/miniAxios/master/doc/dingding.png" alt="钉钉小程序" width="60">
                 <div>钉钉小程序</div>
             </a>
         </td>
         <td align="center" valign="middle">
             <a href="https://smartprogram.baidu.com/docs/develop/api/net_request/#request/" target="_blank">
-                <img src="./doc/baidu.png" alt="百度小程序" width="60">
+                <img src="https://raw.githubusercontent.com/Yaob1990/miniAxios/master/doc/baidu.png" alt="百度小程序" width="60">
                 <div>百度小程序</div>
             </a>
         </td>
         <td align="center" valign="middle">
             <a href="https://q.qq.com/wiki/develop/game/API/network/request.html" target="_blank">
-                <img src="./doc/qq.png" alt="QQ 小程序" width="60">
+                <img src="https://raw.githubusercontent.com/Yaob1990/miniAxios/master/doc/qq.png" alt="QQ 小程序" width="60">
                 <div>QQ 小程序</div>
             </a>
         </td>
         <td align="center" valign="middle">
             <a href="https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/api/network/http/tt-request/" target="_blank">
-                <img src="./doc/tt.png" alt="字节跳动" width="60">
+                <img src="https://raw.githubusercontent.com/Yaob1990/miniAxios/master/doc/tt.png" alt="字节跳动" width="60">
                 <div>字节跳动 小程序</div>
             </a>
         </td>

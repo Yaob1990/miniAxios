@@ -33,7 +33,7 @@ function headersMergeStrat(val1: any, val2: any): any {
 
 const strats = Object.create(null)
 
-const stratKeysFromVal2 = ['url', 'params', 'data']
+const stratKeysFromVal2 = ['url', 'data']
 
 stratKeysFromVal2.forEach(key => {
   strats[key] = fromVal2Strat
@@ -60,8 +60,13 @@ export default function mergeConfig(config1: AxiosRequestConfig, config2: AxiosR
 
   function mergeField(key: string): void {
     // 设计模式 - 策略模式
-    const strat = strats[key] || defaultStrat
-    config[key] = strat(config1[key], config2![key])
+    if (key === 'params' && config2.params) {
+      config.data = config2.params
+    } else {
+      const strat = strats[key] || defaultStrat
+      config[key] = strat(config1[key], config2![key])
+    }
   }
+
   return config
 }
