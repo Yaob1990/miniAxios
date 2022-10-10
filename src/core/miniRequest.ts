@@ -14,7 +14,7 @@ export default function miniRequest<T>(config: AxiosRequestConfig): AxiosPromise
           data: response.data,
           status: response.status,
           // statusText: response.statusText, // 微信有，支付宝没有
-          headers: response.headers,
+          headers: response.headers || response.header,
           config,
           request
         }

@@ -3,6 +3,7 @@ import { AxiosPromise, AxiosRequestConfig, AxiosResponse, Config } from '../type
 import { combineURL, isAbsoluteURL } from '../helpers/util'
 import transform from './transform'
 import miniRequest from './miniRequest'
+import { appName } from './crossPlatform'
 
 export function dispatchRequest(config: AxiosRequestConfig): AxiosPromise {
   processConfig(config)
@@ -22,6 +23,9 @@ function processConfig(config: AxiosRequestConfig): void {
   config.url = transformURL(config)
   // 数据转换
   config.data = transform(config.data, config.headers, config.transformRequest)
+  if (appName === 'uniApp' || appName === 'wechat') {
+    config.header = config.headers
+  }
 }
 
 export function transformURL(config: AxiosRequestConfig): string {
