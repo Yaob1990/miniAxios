@@ -64,7 +64,8 @@ export interface AxiosPromise<T = any> extends Promise<AxiosResponse<T>> {}
 
 export interface AxiosResponse<T = any> {
   data: T
-  status: number
+  status?: number
+  statusCode?: number
   headers?: any
   header?: any
   statusText?: string

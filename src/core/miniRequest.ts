@@ -12,14 +12,14 @@ export default function miniRequest<T>(config: AxiosRequestConfig): AxiosPromise
 
         const axiosResponse: AxiosResponse = {
           data: response.data,
-          status: response.status,
+          status: response.status || response.statusCode,
           // statusText: response.statusText, // 微信有，支付宝没有
           headers: response.headers || response.header,
           config,
           request
         }
 
-        if (!validateStatus || validateStatus(response.status)) {
+        if (!validateStatus || validateStatus(axiosResponse.status!)) {
           response.config = config
           resolve(response)
         } else {
