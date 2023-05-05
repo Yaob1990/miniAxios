@@ -66,17 +66,17 @@ const getSDK = () => {
  */
 const getAppName = () => {
   let currentAppName: AppName = 'unknown'
-  if (typeof uni === 'object' && JSON.stringify(wx) !== '{}') {
+  if (typeof uni === 'object' && JSON.stringify(uni) !== '{}') {
     currentAppName = 'uniApp'
   } else if (typeof wx === 'object' && JSON.stringify(wx) !== '{}') {
     currentAppName = 'wechat'
-  } else if (typeof my === 'object' && JSON.stringify(wx) !== '{}') {
+  } else if (typeof my === 'object' && JSON.stringify(my) !== '{}') {
     currentAppName = 'alipay'
-  } else if (typeof tt === 'object' && JSON.stringify(wx) !== '{}') {
+  } else if (typeof tt === 'object' && JSON.stringify(tt) !== '{}') {
     currentAppName = 'bytedance'
-  } else if (typeof dd === 'object' && JSON.stringify(wx) !== '{}') {
+  } else if (typeof dd === 'object' && JSON.stringify(dd) !== '{}') {
     currentAppName = 'dingtalk'
-  } else if (typeof qq === 'object' && JSON.stringify(wx) !== '{}') {
+  } else if (typeof qq === 'object' && JSON.stringify(qq) !== '{}') {
     currentAppName = 'qq'
   }
   return currentAppName
